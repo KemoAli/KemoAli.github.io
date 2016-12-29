@@ -3,11 +3,21 @@
 <head>
     <link href="css/bootstrap.css" rel="stylesheet">
     <link rel="icon" href="doc/log.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+
     <title>Kemo</title>
     <style>
 
     .margin-top{
         margin-top: 10px;
+    }
+    h4{
+        margin-top: 0px;
+        color:red;
     }
     </style>
 
@@ -38,68 +48,68 @@
     </nav>
 </div>
 
-<div class="container margin-top">
+	<div class="container margin-top">
+		<div class="row">
 
-    <div class="row">
+			<h1 id="conForm" >Contact Form</h1>
+			<div class="col-lg-6 col-xm-12 col-m-8">
 
-        <h1>Contact Form</h1>
-        <div class="col-lg-6 col-xm-12 col-m-8">
+				<form action="#" id="contactForm">			
 
-            <form id="form">
+                        <div class="form-group" id="inputFirstName">                
+                            <label class="control-label" for="inputName">First Name</label>             
+                            <input type="text" class="form-control" id="inputName" placeholder="Your name">               
+                        </div>
+                    
 
-                <div class="form-group">
-                    <label>First Name</label>
-                    <input class="form-control" placeholder="First Name"> </input>
-                </div>
+					<div class="form-group" id="lastName">
+						<label class="control-label" for="inputlastName">Last Name</label>
+						<input id="inputlastName" class="form-control" placeholder="Last Name"> </input>
+					</div>
+					<div class="form-group" id="yourCom">
+						<label class="control-label" for="comName">Your Company</label>
+						<input id="comName" class="form-control" placeholder="Company name"> </input>
+					</div>
 
-                <div class="form-group">
-                    <label>Last Name</label>
-                    <input class="form-control" placeholder="Last Name"> </input>
-                </div>
-                <div class="form-group">
-                    <label>Your Company</label>
-                    <input class="form-control" placeholder="Company name"> </input>
-                </div>
+					<div class="form-group" id="yourEmail">
+						<label class="control-label" for="inputEmail">Email</label>
+						<input id="inputEmail" class="form-control" placeholder="Email">  </input>
+					</div>
 
-                <div class="form-group">
-                    <label>Email</label>
-                    <input class="form-control" placeholder="Email">  </input>
-                </div>
+					<div class="form-group">
+						<label for="tel">Telephone</label>
+						<input id="tel" class="form-control" placeholder="Telephone"> </input>
+					</div>
 
-                <div class="form-group">
-                    <label>Telephone</label>
-                    <input class="form-control" placeholder="Telephone"> </input>
-                </div>
+					<div class="form-group">
+						<label for="theMessage">Message:</label>
+						<textarea class="form-control" rows="5" id="theMessagee"></textarea>
+					</div>
 
-                <div class="form-group">
-                    <label for="comment">Message:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
+					<button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+				</form>
+			</div>
+			<div class="col-lg-6 col-xm-12 col-m-8">
+				<aside>
+					<h1>Contact me:</h1>
+					<label>Kemo Khan</label> <br>
+					<label>Email:</label>
+					<a type="email"> kemokhan@buffalo.edu</a><br>
+					<label>Telephone:</label>
+					<a type="telephone"> (646) 525-5702</a><br>
+					<label>Social Media:</label>
+					<ul>
+						<li><a target="_blank" href="https://www.facebook.com/kemo.khan2"><img src="doc/facebok.jpg" width="30"height="30"></a></li>
+						<li><a target="_blank" href="https://twitter.com/khan_kemo"><img src="doc/twitte.png" height="30" width="30"></a></li>
+						<li><a target="_blank" href="https://plus.google.com/u/0/100020425471892982775"><img src="doc/google+.png" width="30" height="30"></a></li>
 
-                <button type="submit" class="btn btn-success btn-lg">Submit</button>
-            </form>
-        </div>
-        <div class="col-lg-6 col-xm-12 col-m-8">
-            <aside>
-                <h1>Contact me:</h1>
-                <label>Kemo Khan</label> <br>
-                <label>Email:</label>
-                <a type="email"> kemokhan@buffalo.edu</a><br>
-                <label>Telephone:</label>
-                <a type="telephone"> (646) 525-5702</a><br>
-                <label>Social Media:</label>
-                <ul>
-                    <li><a target="_blank" href="https://www.facebook.com/kemo.khan2"><img src="doc/facebok.jpg" width="30"height="30"></a></li>
-                    <li><a target="_blank" href="https://twitter.com/khan_kemo"><img src="doc/twitte.png" height="30" width="30"></a></li>
-                    <li><a target="_blank" href="https://plus.google.com/u/0/100020425471892982775"><img src="doc/google+.png" width="30" height="30"></a></li>
+					</ul>
 
-                </ul>
+				</aside>
+			</div>
+		</div>
+	</div>
 
-            </aside>
-        </div>
-
-    </div>
-</div>
 <div class="pull-right">
     <p>
        To contribute to this page, the source code can be found
@@ -108,9 +118,63 @@
 </div>
 <div class="footer-bottom margin-top">
     <div class="container">
-        <p class="pull-left"> Copyright © Kemo 2016. All right reserved. </p>
+        <p class="pull-left"> Copyright &copy Kemo 2016. All right reserved. </p>
     </div>
 </div>
+
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+<script>
+            $(document).ready(function() {
+                
+                var emailReg=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w+)+$/;
+                var valid = true;
+    
+                
+                $("#submitButton").click(function(e){
+    
+                    if($("#inputName").val()==""){
+                        e.preventDefault();
+                        valid=false;
+                        $("#inputFirstName").addClass("has-error"); 
+                       $("#inputName").after("<h4>You must insert your name</h4>");        
+                    }
+                    if($("#inputlastName").val()==""){
+                        e.preventDefault();
+                        valid=false;
+                        $("#lastName").addClass("has-error"); 
+                        $("#inputlastName").after("<h4>You must insert your last name</h4>");        
+                    }
+                    if($("#inputEmail").val()==""){
+                        e.preventDefault();
+                        valid=false;
+                        $("#yourEmail").addClass("has-error");  
+                        $("#inputEmail").after("<h4>You must insert proper email</h4>");     
+                    }
+                    if(!emailReg.test($("#inputEmail").val())){
+                        e.preventDefault();
+                        valid=false;
+                        $("#yourEmail").addClass("has-error");    
+                    }
+                    if($("#comName").val()==""){
+                        e.preventDefault();
+                        valid=false;
+                        $("#yourCom").addClass("has-error"); 
+                        $("#comName").after("<h4>You must insert your Company name</h4>");    
+                    }
+                    if (valid){
+                        $("#conForm").html("<h3>Submission was successful. Thank you! </h3>");
+                        
+                    }
+                }); 
+
+                    $("button #submitComment").click(function(){
+                        var inputComment = $("textarea #commentArea").val();
+                        $("#submitComment").after("<h4>inputComment</h4>");
+                    });
+            });
+        </script>
 
 </body>
 </html>
