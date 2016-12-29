@@ -19,6 +19,7 @@
         margin-top: 0px;
         color:red;
     }
+
     </style>
 
 </head>
@@ -29,22 +30,32 @@
 <div class="jumbotron">
     <div>
         <h1>
-            <img src="doc/log.png" height="100" width="100">
+            <img class="responsive" src="doc/log.png" height="100" width="100">
             WELCOME, Kemo
         </h1>
     </div>
 
-    <nav class="navbar container">
-        <ul class="nav navbar-brand">
-            <li><a target="_self" href="index.html">Home</a></li>
+    <nav class="navbar navbar-inverse container ">
+	    <div class="container-fluid">
 
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-            <li><a target="_blank" href="#form">Contact</a></li>
-            <li><a target="_blank" href="doc/resume.pdf" download="Resume">Resume</a></li>
-            <li><a target="_blank" href="https://Kemo_ub@bitbucket.org/Dachkar/kluep.git">Bitbucket</a></li>
-        </ul>
+	        <div class="navbar navbar-nav">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        	<span class="icon-bar"></span>
+	        </button>
+	            <a class="navbar-brand" target="_self" href="index.html">HOME</a>
+	        </div>
+
+	        <div class="collapse navbar-collapse" id="myNav">
+		        <ul class="nav navbar-nav navbar-right">
+		            <li>
+		            <li><a target="_blank" href="#form">Contact</a></li>
+		            <li><a target="_blank" href="doc/resume.pdf" download="Resume">Resume</a></li>
+		            <li><a target="_blank" href="https://Kemo_ub@bitbucket.org/Dachkar/kluep.git">Bitbucket</a></li>
+		        </ul>
+	        </div>
+	     </div>
     </nav>
 </div>
 
