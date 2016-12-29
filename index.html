@@ -138,19 +138,13 @@
                         e.preventDefault();
                         valid=false;
                         $("#inputFirstName").addClass("has-error"); 
-                       $("#inputName").after("<h4>You must insert your name</h4>");        
-                    }
-                    if($("#inputlastName").val()==""){
-                        e.preventDefault();
-                        valid=false;
-                        $("#lastName").addClass("has-error"); 
-                        $("#inputlastName").after("<h4>You must insert your last name</h4>");        
+                        
                     }
                     if($("#inputEmail").val()==""){
                         e.preventDefault();
                         valid=false;
                         $("#yourEmail").addClass("has-error");  
-                        $("#inputEmail").after("<h4>You must insert proper email</h4>");     
+                 
                     }
                     if(!emailReg.test($("#inputEmail").val())){
                         e.preventDefault();
@@ -161,7 +155,7 @@
                         e.preventDefault();
                         valid=false;
                         $("#yourCom").addClass("has-error"); 
-                        $("#comName").after("<h4>You must insert your Company name</h4>");    
+                     
                     }
                     if (valid){
                         $("#conForm").html("<h3>Submission was successful. Thank you! </h3>");
